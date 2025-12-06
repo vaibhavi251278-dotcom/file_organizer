@@ -2,11 +2,11 @@ import os
 import json
 import shutil
 
-# Load config.json
+
 with open("config.json", "r") as file:
     FILE_TYPES = json.load(file)
 
-# Ask user which folder to organize
+
 target_folder = input("Enter folder path to organize: ").strip()
 
 if not os.path.isdir(target_folder):
@@ -44,5 +44,6 @@ def organize_files(folder):
 
 if __name__ == "__main__":
     organize_files(target_folder)
+
 
 
